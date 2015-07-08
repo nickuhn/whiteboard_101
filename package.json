@@ -1,0 +1,26 @@
+{
+  "name": "whiteboard_101",
+  "version": "0.1.0",
+  "description": "Whiteboard exercises and tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickuhn/whiteboard_101.git"
+  },
+  "author": "Nick Kuhn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickuhn/whiteboard_101/issues"
+  },
+  "homepage": "https://github.com/nickuhn/whiteboard_101#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.2",
+    "jshint-stylish": "^2.0.1",
+    "mocha": "^2.2.5"
+  }
+}
