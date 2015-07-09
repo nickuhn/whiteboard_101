@@ -6,6 +6,9 @@ describe('arrayFunctions', function(){
     it('should return 1 when passed [1, 2, 3, 4]', function(){
       expect(arrayFunctions.shifty([1, 2, 3, 4])).to.deep.equal(1);
     });
+    it('should return undefined when passed []', function(){
+      expect(arrayFunctions.shifty([])).to.deep.equal(undefined);
+    });
   });
   describe('#unshifty', function(){
     it('should add the variable passed to the front of the array', function(){
@@ -16,6 +19,9 @@ describe('arrayFunctions', function(){
     describe('#popy', function(){
     it('should return 4 when passed [1, 2, 3, 4]', function(){
       expect(arrayFunctions.popy([1, 2, 3, 4])).to.deep.equal(4);
+    });
+    it('should return undefined when passed []', function(){
+      expect(arrayFunctions.popy([])).to.deep.equal(undefined);
     });
   });
   describe('#pushy', function(){
@@ -36,12 +42,12 @@ describe('arrayFunctions', function(){
   });
   describe('#commonStartingLetter', function(){
     it('should return the most common starting letter words in the array', function(){
-      expect(arrayFunctions.commonStartingLetter(['everything', 'in', 'here', 'is', 'a', 'string'])).to.deep.equal('i');
+      expect(arrayFunctions.commonStartingLetter(['everything', 'in', 'here', 'is', 'a', 'string'])).to.deep.equal(['i']);
     });
   });
   describe('#commonLetter', function(){
     it('should return the most common letter in the array', function(){
-      expect(arrayFunctions.commonLetter(['everything', 'in', 'here', 'is', 'a', 'string'])).to.deep.equal(['a', 'e']);
+      expect(arrayFunctions.commonLetter(['everything ', ' in ', ' here ', ' is ', 'a', 'string'])).to.deep.equal(['e', 'i']);
     });
   });
 });
