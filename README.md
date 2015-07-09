@@ -36,6 +36,6 @@ Returns most common letter regardless of position in an array of words.
 
 ####Tests
 
-I added to test files, one to test the arrayFunctions the other to test customArrayPrototypes.
+I added two test files, one to test the arrayFunctions the other to test customArrayPrototypes.
 
 These run using Mocha/Chai, I also created a gulp file to run the tests and lint my code.
